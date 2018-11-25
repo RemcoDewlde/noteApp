@@ -1,0 +1,32 @@
+<br>
+<div class="jumbotron jumbotron-fluid">
+    <div class="container">
+        <h1 class="display-4">
+            <i class="far fa-sticky-note"></i>
+            {{title}}
+        </h1>
+        <p class="lead">Welkom to the note taking application</p>
+        <p class=""><a href="/create" class="btn btn-primary btn-block" style="color: white">Create a new note?</a>
+        </p>
+    </div>
+</div>
+
+
+<div class="container">
+    {{#each notes}}
+        <div class="row" style="display: block ;">
+            <div class="card">
+                <h5 class="card-header">Note</h5>
+                <div class="card-body">
+                    <h5 class="card-title">{{title}}</h5>
+                    <p class="card-text">{{body}}</p>
+                    <form action="/delete/note" method="post">
+                        <input type="hidden" name="title" value="{{title}}">
+                        <button type="submit" class="btn btn-sm btn-danger">Delete note</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <br>
+    {{/each}}
+</div>
