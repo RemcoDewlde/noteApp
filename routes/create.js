@@ -26,3 +26,16 @@ router.post('/submit', function (req, res) {
 
 });
 module.exports = router;
+
+
+router.post('/submit', function (req, res) {
+    let notes = ns.fetchNotes();
+    let note = {
+        title: req.body.title,
+        body: req.body.note
+    };
+    ns.saveNotes(notes);
+
+    res.redirect('/');
+
+});

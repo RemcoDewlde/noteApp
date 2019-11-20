@@ -1,18 +1,1 @@
-[
-  {
-    "title": "dit is een test",
-    "body": "denk dat dit wel moet werken 👍🏻"
-  },
-  {
-    "title": "dit is een tweede test",
-    "body": ""
-  },
-  {
-    "title": "regex les",
-    "body": "!#/@!$"
-  },
-  {
-    "title": "emoji test",
-    "body": "😊😁🤨🥶🤯"
-  }
-]
+[{"title":"emoji test","body":"😊😁🤨🥶🤯"},{"title":"A awesome todo","body":"test"},{"title":"j;dkasjf;asdf","body":"asdfasdf"}]

@@ -6,6 +6,8 @@ let logger = require('morgan');
 let bodyParser = require('body-parser');
 
 const exphbs = require('express-handlebars');
+
+// routes
 let indexRouter = require('./routes/index');
 let notesRouter = require('./routes/notes');
 let createRouter = require('./routes/create');

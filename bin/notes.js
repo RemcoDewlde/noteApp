@@ -30,7 +30,6 @@ let delNote = (title) => {
     } else {
         notes.splice(index, 1);
     }
-
     saveNotes(notes);
     return '';
 };
